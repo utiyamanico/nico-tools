@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>現場利益 PRO mini｜ニコツール</title>
+<meta name="description" content="工事ごとの見積・原価・支出・粗利益をまとめて管理できる現場向けツール。">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,
+"Hiragino Kaku Gothic ProN","Yu Gothic",Arial,sans-serif;
+background:#f5f7f9;
+color:#17212b;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e5e8eb;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-weight:900;
+font-size:20px;
+}
+
+.back{
+text-decoration:none;
+color:#56616c;
+font-size:14px;
+}
+
+.hero{
+background:#152c42;
+color:white;
+padding:85px 20px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+background:#dff7f1;
+color:#087d79;
+padding:7px 14px;
+border-radius:50px;
+font-size:12px;
+font-weight:bold;
+}
+
+.hero h1{
+font-size:48px;
+margin:20px 0 15px;
+}
+
+.hero p{
+color:#d5e0e8;
+font-size:18px;
+line-height:1.9;
+}
+
+.container{
+max-width:950px;
+margin:auto;
+padding:70px 20px;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.title h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.title p{
+color:#6b7680;
+}
+
+.problem-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+}
+
+.problem{
+background:white;
+border:1px solid #e2e7eb;
+border-radius:15px;
+padding:25px;
+text-align:center;
+}
+
+.problem span{
+font-size:30px;
+}
+
+.problem h3{
+font-size:16px;
+}
+
+.problem p{
+font-size:13px;
+color:#69747e;
+line-height:1.7;
+}
+
+.solution{
+background:white;
+padding:35px;
+border-radius:18px;
+border:1px solid #e2e7eb;
+margin-top:30px;
+}
+
+.solution h2{
+margin-top:0;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:25px;
+}
+
+.feature{
+background:#f7fafb;
+padding:20px;
+border-radius:12px;
+}
+
+.feature strong{
+display:block;
+margin-bottom:7px;
+}
+
+.feature p{
+font-size:13px;
+color:#68747f;
+line-height:1.7;
+margin:0;
+}
+
+.flow{
+background:#152c42;
+color:white;
+padding:70px 20px;
+}
+
+.flow-inner{
+max-width:900px;
+margin:auto;
+}
+
+.flow h2{
+text-align:center;
+font-size:30px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:35px;
+}
+
+.step{
+background:#203b53;
+padding:25px;
+border-radius:14px;
+}
+
+.step-number{
+color:#72dfcb;
+font-size:12px;
+font-weight:bold;
+}
+
+.step h3{
+margin:8px 0;
+}
+
+.step p{
+color:#cbd8e1;
+font-size:13px;
+line-height:1.7;
+}
+
+.cta{
+text-align:center;
+padding:80px 20px;
+background:white;
+}
+
+.cta h2{
+font-size:32px;
+}
+
+.cta p{
+color:#69747e;
+line-height:1.8;
+}
+
+.buttons{
+max-width:420px;
+margin:30px auto 0;
+}
+
+.btn{
+display:block;
+padding:15px;
+border-radius:9px;
+text-decoration:none;
+font-weight:bold;
+margin-top:10px;
+}
+
+.trial{
+background:#087d79;
+color:white;
+}
+
+.buy{
+background:#152c42;
+color:white;
+}
+
+.note{
+font-size:12px;
+color:#8a9299;
+margin-top:18px;
+}
+
+footer{
+text-align:center;
+padding:35px;
+color:#8a9299;
+font-size:12px;
+}
+
+@media(max-width:750px){
+
+.hero h1{
+font-size:36px;
+}
+
+.problem-grid,
+.features,
+.steps{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+ニコツール
+</div>
+
+<a class="back" href="index.html">
+← ツール一覧に戻る
+</a>
+
+</header>
+
+
+<section class="hero">
+
+<div class="badge">
+建設・現場向け
+</div>
+
+<h1>
+現場利益 PRO mini
+</h1>
+
+<p>
+「この工事、結局いくら利益が残る？」をひと目で。<br>
+見積・原価・実際の支出をまとめて管理。
+</p>
+
+</section>
+
+
+<section class="container">
+
+<div class="title">
+
+<h2>こんな管理、面倒になっていませんか？</h2>
+
+<p>
+工事ごとのお金を、もっと分かりやすく。
+</p>
+
+</div>
+
+
+<div class="problem-grid">
+
+<div class="problem">
+
+<span>🧾</span>
+
+<h3>見積計算が面倒</h3>
+
+<p>
+品目・数量・原価・販売価格を
+毎回計算するのが大変。
+</p>
+
+</div>
+
+
+<div class="problem">
+
+<span>💰</span>
+
+<h3>利益が分かりにくい</h3>
+
+<p>
+見積金額だけでは、
+実際にいくら残るのか分かりにくい。
+</p>
+
+</div>
+
+
+<div class="problem">
+
+<span>📚</span>
+
+<h3>案件管理がバラバラ</h3>
+
+<p>
+工事ごとの見積や支出を
+まとめて確認したい。
+</p>
+
+</div>
+
+</div>
+
+
+<div class="solution">
+
+<h2>現場利益 PRO mini でまとめて管理</h2>
+
+<p>
+工事を登録して、見積と実際の支出を入力。
+見積時点の予定と実績を比較できます。
+</p>
+
+
+<div class="features">
+
+<div class="feature">
+<strong>📊 見積金額を自動計算</strong>
+<p>
+数量・原価単価・販売単価を入力して、
+予定原価や見積金額を確認。
+</p>
+</div>
+
+<div class="feature">
+<strong>💴 粗利益を確認</strong>
+<p>
+見積売上と予定原価から、
+見込粗利益・粗利益率を確認できます。
+</p>
+</div>
+
+<div class="feature">
+<strong>🧰 実際の支出を記録</strong>
+<p>
+材料費・人件費・外注費・経費などを
+案件ごとに登録。
+</p>
+</div>
+
+<div class="feature">
+<strong>📈 計画と実績を比較</strong>
+<p>
+予定原価と登録済み支出の差を確認できます。
+</p>
+</div>
+
+<div class="feature">
+<strong>📄 見積書を出力</strong>
+<p>
+作成した見積内容を印刷したり、
+PDFとして保存できます。
+</p>
+</div>
+
+<div class="feature">
+<strong>📁 CSV出力・バックアップ</strong>
+<p>
+データのCSV出力や、
+案件データのバックアップに対応。
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="flow">
+
+<div class="flow-inner">
+
+<h2>使い方はシンプル</h2>
+
+<div class="steps">
+
+<div class="step">
+
+<div class="step-number">
+STEP 01
+</div>
+
+<h3>工事を登録</h3>
+
+<p>
+工事名・お客様名などの
+基本情報を入力。
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 02
+</div>
+
+<h3>見積・支出を入力</h3>
+
+<p>
+品目や原価、実際に発生した
+費用を登録します。
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 03
+</div>
+
+<h3>利益を確認</h3>
+
+<p>
+見積・予定原価・支出を比較して、
+案件の状況を確認。
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cta">
+
+<h2>まずは無料版から。</h2>
+
+<p>
+購入前に操作や使い勝手を確認できます。<br>
+気に入ったら製品版へ。
+</p>
+
+
+<div class="buttons">
+
+<a class="btn trial" href="#">
+無料体験版を試す
+</a>
+
+<a class="btn buy" href="#">
+BOOTHで製品版を見る
+</a>
+
+</div>
+
+<div class="note">
+※ 現在ボタンのリンクを準備中です。
+</div>
+
+</section>
+
+
+<footer>
+© 2026 ニコツール
+</footer>
+
+</body>
+</html>
+iPhoneから送信
+
+2026/09/26 19:40、内山京吾 <u03keigo20@icloud.com>のメール:
+
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ニコツール</title>
+</head>
+<body>
+
+<h1>ニコツール</h1>
+
+<p>仕事を便利にするツールを紹介しています。</p>
+
+<h2>工事写真整理ツール</h2>
+<p>工事写真の整理を簡単にするツールです。</p>
+
+<h2>見積ツール</h2>
+<p>見積・原価・利益を簡単に計算できます。</p>
+
+</body>
+</html>
