@@ -1,21 +1,159 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>ニコツール</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ニコツール｜仕事をもっと簡単に</title>
+
+<style>
+* {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+ "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+ background: #f5f6f8;
+ color: #222;
+}
+
+header {
+ background: #fff;
+ padding: 22px 8%;
+ border-bottom: 1px solid #eee;
+}
+
+header h2 {
+ margin: 0;
+}
+
+.hero {
+ background: #fff;
+ text-align: center;
+ padding: 90px 20px;
+}
+
+.hero h1 {
+ font-size: 48px;
+ margin: 0 0 15px;
+}
+
+.hero p {
+ color: #666;
+ font-size: 18px;
+ line-height: 1.8;
+}
+
+.products {
+ max-width: 950px;
+ margin: auto;
+ padding: 60px 20px;
+}
+
+.products > h2 {
+ text-align: center;
+ margin-bottom: 35px;
+}
+
+.card {
+ background: #fff;
+ padding: 30px;
+ margin-bottom: 25px;
+ border-radius: 16px;
+ box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+}
+
+.card h3 {
+ margin-top: 0;
+ font-size: 24px;
+}
+
+.card p {
+ color: #666;
+ line-height: 1.8;
+}
+
+.button {
+ display: inline-block;
+ margin-top: 10px;
+ padding: 13px 22px;
+ background: #111;
+ color: #fff;
+ text-decoration: none;
+ border-radius: 8px;
+ font-weight: bold;
+}
+
+footer {
+ text-align: center;
+ padding: 40px 20px;
+ color: #888;
+}
+
+@media (max-width: 600px) {
+ .hero h1 {
+   font-size: 34px;
+ }
+
+ .hero {
+   padding: 60px 20px;
+ }
+}
+</style>
 </head>
+
 <body>
 
- <h1>ニコツール</h1>
+<header>
+ <h2>ニコツール</h2>
+</header>
 
- <p>仕事を便利にするツールを紹介しています。</p>
+<section class="hero">
+ <h1>仕事を、もっと簡単に。</h1>
 
- <h2>工事写真整理ツール</h2>
- <p>工事写真の整理を簡単にするツールです。</p>
+ <p>
+   面倒な作業を減らすための<br>
+   シンプルな業務効率化ツール。
+ </p>
+</section>
 
- <h2>見積ツール</h2>
- <p>見積・原価・利益を簡単に計算できます。</p>
+<section class="products">
+
+ <h2>ツール一覧</h2>
+
+ <div class="card">
+   <h3>📷 工事写真整理ツール</h3>
+
+   <p>
+     大量の工事写真を整理する作業を、
+     もっと簡単にするためのツールです。
+   </p>
+
+   <a class="button" href="#">
+     詳しく見る
+   </a>
+ </div>
+
+ <div class="card">
+   <h3>📊 見積・利益計算ツール</h3>
+
+   <p>
+     原価・利益・利益率を確認しながら、
+     見積金額を簡単に計算できます。
+   </p>
+
+   <a class="button" href="#">
+     詳しく見る
+   </a>
+ </div>
+
+</section>
+
+<footer>
+ © 2026 ニコツール
+</footer>
 
 </body>
 </html>
