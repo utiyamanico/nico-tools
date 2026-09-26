@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ニコツール｜仕事をもっと簡単に</title>
+<meta name="description" content="現場・事務作業の面倒を減らす、シンプルな業務効率化ツール。見積・利益管理、作業報告書作成、CSV集計など。">
 
 <style>
 * {
@@ -13,92 +14,253 @@
 
 body {
  margin: 0;
- font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
- "Hiragino Kaku Gothic ProN", Arial, sans-serif;
- background: #f5f6f8;
- color: #222;
+ font-family: -apple-system, BlinkMacSystemFont,
+ "Hiragino Kaku Gothic ProN", "Yu Gothic", Arial, sans-serif;
+ background: #f5f7f9;
+ color: #17212b;
 }
 
 header {
- background: #fff;
- padding: 22px 8%;
- border-bottom: 1px solid #eee;
+ background: rgba(255,255,255,.95);
+ border-bottom: 1px solid #e7eaed;
+ padding: 18px 7%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ z-index: 10;
 }
 
-header h2 {
- margin: 0;
+.logo {
+ font-size: 21px;
+ font-weight: 900;
+}
+
+header span {
+ font-size: 13px;
+ color: #777;
 }
 
 .hero {
- background: #fff;
  text-align: center;
- padding: 90px 20px;
+ background: #ffffff;
+ padding: 100px 20px 90px;
+}
+
+.hero-badge {
+ display: inline-block;
+ background: #e9f7f4;
+ color: #087d79;
+ padding: 7px 15px;
+ border-radius: 50px;
+ font-size: 13px;
+ font-weight: bold;
+ margin-bottom: 20px;
 }
 
 .hero h1 {
- font-size: 48px;
- margin: 0 0 15px;
+ font-size: 52px;
+ margin: 0 0 20px;
+ letter-spacing: -2px;
 }
 
 .hero p {
- color: #666;
+ color: #66717c;
  font-size: 18px;
- line-height: 1.8;
+ line-height: 1.9;
+ margin: 0;
 }
 
 .products {
- max-width: 950px;
+ max-width: 1100px;
  margin: auto;
- padding: 60px 20px;
+ padding: 75px 20px;
 }
 
-.products > h2 {
+.section-title {
  text-align: center;
- margin-bottom: 35px;
+ margin-bottom: 45px;
+}
+
+.section-title h2 {
+ font-size: 32px;
+ margin-bottom: 10px;
+}
+
+.section-title p {
+ color: #777;
+}
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 22px;
 }
 
 .card {
- background: #fff;
- padding: 30px;
- margin-bottom: 25px;
- border-radius: 16px;
- box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+ background: white;
+ border: 1px solid #e3e8ec;
+ border-radius: 18px;
+ padding: 28px;
+ box-shadow: 0 8px 30px rgba(20,40,60,.06);
+ display: flex;
+ flex-direction: column;
+}
+
+.icon {
+ font-size: 38px;
+ margin-bottom: 15px;
+}
+
+.tag {
+ color: #087d79;
+ font-size: 12px;
+ font-weight: 800;
+ margin-bottom: 7px;
 }
 
 .card h3 {
- margin-top: 0;
- font-size: 24px;
+ font-size: 22px;
+ margin: 0 0 14px;
 }
 
 .card p {
- color: #666;
+ color: #65717c;
  line-height: 1.8;
+ font-size: 14px;
 }
 
-.button {
- display: inline-block;
- margin-top: 10px;
- padding: 13px 22px;
- background: #111;
- color: #fff;
- text-decoration: none;
- border-radius: 8px;
+.features {
+ padding: 0;
+ margin: 10px 0 25px;
+ list-style: none;
+}
+
+.features li {
+ padding: 7px 0;
+ font-size: 13px;
+ border-bottom: 1px solid #eef1f3;
+}
+
+.features li::before {
+ content: "✓";
+ color: #087d79;
  font-weight: bold;
+ margin-right: 8px;
+}
+
+.buttons {
+ margin-top: auto;
+}
+
+.btn {
+ display: block;
+ text-align: center;
+ padding: 13px;
+ margin-top: 9px;
+ border-radius: 9px;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 14px;
+}
+
+.btn-main {
+ background: #152c42;
+ color: white;
+}
+
+.btn-sub {
+ border: 1px solid #ccd5dc;
+ color: #25394a;
+ background: white;
+}
+
+.why {
+ background: #152c42;
+ color: white;
+ padding: 75px 20px;
+ text-align: center;
+}
+
+.why h2 {
+ font-size: 30px;
+}
+
+.why p {
+ color: #cbd6df;
+ line-height: 2;
+ max-width: 680px;
+ margin: auto;
+}
+
+.steps {
+ max-width: 900px;
+ margin: auto;
+ padding: 75px 20px;
+}
+
+.steps h2 {
+ text-align: center;
+ font-size: 30px;
+ margin-bottom: 40px;
+}
+
+.step-grid {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 20px;
+}
+
+.step {
+ text-align: center;
+ background: white;
+ padding: 25px;
+ border-radius: 14px;
+ border: 1px solid #e4e8eb;
+}
+
+.number {
+ color: #087d79;
+ font-weight: 900;
+ font-size: 14px;
+}
+
+.step h3 {
+ margin: 8px 0;
+}
+
+.step p {
+ color: #6c7781;
+ font-size: 13px;
+ line-height: 1.7;
 }
 
 footer {
  text-align: center;
  padding: 40px 20px;
- color: #888;
+ background: white;
+ color: #89929a;
+ font-size: 12px;
 }
 
-@media (max-width: 600px) {
- .hero h1 {
-   font-size: 34px;
+@media(max-width:850px) {
+
+ .grid,
+ .step-grid {
+   grid-template-columns: 1fr;
  }
 
  .hero {
-   padding: 60px 20px;
+   padding: 70px 20px;
+ }
+
+ .hero h1 {
+   font-size: 37px;
+ }
+
+ .products {
+   padding-top: 55px;
  }
 }
 </style>
@@ -107,53 +269,249 @@ footer {
 <body>
 
 <header>
- <h2>ニコツール</h2>
+ <div class="logo">ニコツール</div>
+ <span>仕事をもっと簡単に。</span>
 </header>
 
 <section class="hero">
- <h1>仕事を、もっと簡単に。</h1>
+
+ <div class="hero-badge">
+   SIMPLE BUSINESS TOOLS
+ </div>
+
+ <h1>
+   面倒な仕事を、<br>
+   もっと簡単に。
+ </h1>
 
  <p>
-   面倒な作業を減らすための<br>
-   シンプルな業務効率化ツール。
+   現場・事務作業の「これ面倒だな」を減らす。<br>
+   シンプルで使いやすい業務効率化ツール。
  </p>
+
 </section>
 
 <section class="products">
 
- <h2>ツール一覧</h2>
-
- <div class="card">
-   <h3>📷 工事写真整理ツール</h3>
-
-   <p>
-     大量の工事写真を整理する作業を、
-     もっと簡単にするためのツールです。
-   </p>
-
-   <a class="button" href="#">
-     詳しく見る
-   </a>
+ <div class="section-title">
+   <h2>ツール一覧</h2>
+   <p>必要な機能だけを、シンプルに。</p>
  </div>
 
- <div class="card">
-   <h3>📊 見積・利益計算ツール</h3>
+ <div class="grid">
 
-   <p>
-     原価・利益・利益率を確認しながら、
-     見積金額を簡単に計算できます。
-   </p>
+   <!-- 現場利益 -->
 
-   <a class="button" href="#">
-     詳しく見る
-   </a>
+   <article class="card">
+
+     <div class="icon">📊</div>
+
+     <div class="tag">
+       建設・現場向け
+     </div>
+
+     <h3>
+       現場利益 PRO mini
+     </h3>
+
+     <p>
+       「この工事、結局いくら利益が残る？」
+       見積から実際の支出まで、
+       工事ごとの利益をまとめて管理。
+     </p>
+
+     <ul class="features">
+       <li>見積金額を自動計算</li>
+       <li>予定原価を管理</li>
+       <li>実際の支出を記録</li>
+       <li>粗利益・利益率を確認</li>
+       <li>見積書をPDF保存</li>
+     </ul>
+
+     <div class="buttons">
+
+       <a class="btn btn-main" href="#">
+         無料版を試す
+       </a>
+
+       <a class="btn btn-sub" href="#">
+         詳しく見る
+       </a>
+
+     </div>
+
+   </article>
+
+
+   <!-- 報告書 -->
+
+   <article class="card">
+
+     <div class="icon">📷</div>
+
+     <div class="tag">
+       現場・報告業務向け
+     </div>
+
+     <h3>
+       写真付き作業報告書メーカー
+     </h3>
+
+     <p>
+       現場写真を使った作業報告書作成を、
+       もっと簡単に。
+       面倒な報告書作業の時間を減らします。
+     </p>
+
+     <ul class="features">
+       <li>写真を使った報告書作成</li>
+       <li>現場の記録を整理</li>
+       <li>シンプルな操作</li>
+       <li>無料体験版あり</li>
+     </ul>
+
+     <div class="buttons">
+
+       <a class="btn btn-main" href="#">
+         無料版を試す
+       </a>
+
+       <a class="btn btn-sub" href="#">
+         詳しく見る
+       </a>
+
+     </div>
+
+   </article>
+
+
+   <!-- CSV -->
+
+   <article class="card">
+
+     <div class="icon">📁</div>
+
+     <div class="tag">
+       Excel・事務作業向け
+     </div>
+
+     <h3>
+       CSV集計マスター PRO mini
+     </h3>
+
+     <p>
+       バラバラになったExcel・CSVを
+       一つずつ集計する作業を効率化。
+       複数ファイルをまとめて処理できます。
+     </p>
+
+     <ul class="features">
+       <li>複数ファイルを一括読込</li>
+       <li>CSV・Excelに対応</li>
+       <li>項目ごとに自動集計</li>
+       <li>重複候補を確認</li>
+       <li>集計結果をCSV出力</li>
+     </ul>
+
+     <div class="buttons">
+
+       <a class="btn btn-main" href="#">
+         無料版を試す
+       </a>
+
+       <a class="btn btn-sub" href="#">
+         詳しく見る
+       </a>
+
+     </div>
+
+   </article>
+
  </div>
 
 </section>
 
+
+<section class="why">
+
+ <h2>
+   難しいソフトはいらない。
+ </h2>
+
+ <p>
+   ニコツールは、
+   日々の仕事で発生する小さな面倒を減らすための
+   シンプルな業務ツールを提供します。
+   必要な機能に絞り、
+   すぐに使い始められることを大切にしています。
+ </p>
+
+</section>
+
+
+<section class="steps">
+
+ <h2>かんたん3ステップ</h2>
+
+ <div class="step-grid">
+
+   <div class="step">
+     <div class="number">STEP 01</div>
+     <h3>ツールを選ぶ</h3>
+     <p>
+       自分の作業に合ったツールを選びます。
+     </p>
+   </div>
+
+   <div class="step">
+     <div class="number">STEP 02</div>
+     <h3>無料で試す</h3>
+     <p>
+       まずは体験版で操作や機能を確認。
+     </p>
+   </div>
+
+   <div class="step">
+     <div class="number">STEP 03</div>
+     <h3>必要なら製品版へ</h3>
+     <p>
+       気に入ったツールだけ購入できます。
+     </p>
+   </div>
+
+ </div>
+
+</section>
+
+
 <footer>
  © 2026 ニコツール
 </footer>
+
+</body>
+</html>
+iPhoneから送信
+
+2026/09/26 19:40、内山京吾 <u03keigo20@icloud.com>のメール:
+
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ニコツール</title>
+</head>
+<body>
+
+<h1>ニコツール</h1>
+
+<p>仕事を便利にするツールを紹介しています。</p>
+
+<h2>工事写真整理ツール</h2>
+<p>工事写真の整理を簡単にするツールです。</p>
+
+<h2>見積ツール</h2>
+<p>見積・原価・利益を簡単に計算できます。</p>
 
 </body>
 </html>
